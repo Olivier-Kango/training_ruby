@@ -1,4 +1,8 @@
-class Person
+require './nameable'
+require './capitalizeDecorator'
+require './trimmerDecorator'
+
+class Person < Nameable
   attr_reader :id
   attr_accessor :age, :name
 
@@ -16,7 +20,8 @@ class Person
   def can_use_services?
     of_age? or @parent_permission
   end
-end
 
-person = Person.new(15, 'olk')
-p person.can_use_services?
+  def correct_name
+    @name
+  end
+end
