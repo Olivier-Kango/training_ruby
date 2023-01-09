@@ -1,8 +1,11 @@
 require './app'
 
+# Main
 def main
-  loop do 
-    App.new.run
+  app = App.new
+  loop do
+    app.run
+    puts
   end
 end
 
