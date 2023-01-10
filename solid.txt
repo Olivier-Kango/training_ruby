@@ -1,0 +1,12 @@
+SOLID
+
+Solid is an acronym for five object-oriented programming principes:
+
+S - Single-responsability
+O - Open-closed
+L - Liskov Substitution
+I - Interface Segregation
+D - Dependecy Inversion
+
+To learn more about SOLID, read the following article
+
