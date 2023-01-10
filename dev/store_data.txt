@@ -1,0 +1,33 @@
+Store data in files
+
+One way to persist data between  uses is to just store it in a file. In this lesson, you will learn how to do this.
+
+Eventually you will need to preserve data from your program. In this cas wrtiting to a file is a good choice. Before actually wrtiting your data you will have to figure out how to represent in the file and how to read it back into your application.
+
+For example, if your application is storing lists of names your format can be to put one name per line in the file. This means that when writing you put a newline after every name and when reading the file you know that names are separeted by a newline.
+
+To learn more about storing data in files read the following articles:
+
+1) IO in Ruby
+  - (Input/ output) 5 paragraphs
+  I/O srtreams are located under the /dev/fd directory.
+  Files there are given a number, known as a file descriptor. The operating system provides three streams by default. They are:
+   Standard input (/dev/fd/0)
+   Standard output (/dev/fd/1)
+   Standard error(/dev/fd/2)
+
+   They are often abbreviated to stdin, stdout, and stderr respectively. Standard input will default to reading from the keyboard while standard output and standard error both default to writing to the terminal. As cam be above, /dev/stdout, /dev/stdin, and /dev/stderr are just symlinks to the appropriate file descriptor.
+
+  - The IO class 5 paragraphs
+    1 - By default the global variables $stdin, $stdout, $stderr point to their respective constants. While the constants should always point to the default streams, the globals can be overwritten to point to another I/O stream such as a file.
+
+
+  - Position
+
+  - Sub-classes and Duck-types
+
+  - Puting it all together
+
+  - Working with disparate APIs
+
+2) Using File class with examples
