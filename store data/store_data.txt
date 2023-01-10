@@ -1,0 +1,12 @@
+Store data in files
+
+One way to persist data between  uses is to just store it in a file. In this lesson, you will learn how to do this.
+
+Eventually you will need to preserve data from your program. In this cas wrtiting to a file is a good choice. Before actually wrtiting your data you will have to figure out how to represent in the file and how to read it back into your application.
+
+For example, if your application is storing lists of names your format can be to put one name per line in the file. This means that when writing you put a newline after every name and when reading the file you know that names are separeted by a newline.
+
+To learn more about storing data in files read the following articles:
+
+1) IO in Ruby
+2) Using File class with examples
