@@ -17,3 +17,7 @@ describe HelloWorld do
      
   end
 end
+
+# Basic Syntax
+
+# Writing Specs
