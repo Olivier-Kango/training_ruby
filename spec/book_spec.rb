@@ -5,7 +5,7 @@ describe Book do
     @book = Book.new "Title", "Author", :category
   end
 
-  describe "#new" do
+  context "#new" do
     it "returns a new book object" do
       expect(@book).to be_an_instance_of Book
     end
@@ -15,17 +15,23 @@ describe Book do
     end
   end
 
-  describe "#title" do
+  context "#title" do
     it "returns the correct title" do
       expect(@book.title).to eql "Title"
     end
+  end
 
-    it "returns the correct title" do
+  context "#author" do
+    it "returns the correct author" do
       expect(@book.author).to eql "Author"
     end
+  end
 
-    it "returns the correct title" do
+  context "#category" do
+    it "returns the correct category" do
       expect(@book.category).to eql :category
     end
   end
 end
+
+# rspec spec --format documentation
